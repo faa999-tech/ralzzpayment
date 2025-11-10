@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ralzz Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://i.ibb.co/L5hY5tJ/image.png" alt="Ralzz Logo" class="logo">
+        <p class="shop-name">RALZZ STORE</p>
+    </div>
+
+    <h2>Payment Method</h2>
+
+    <div class="pay-item dana">
+        <div class="pay-name">DANA</div>
+        <button class="btn-action" onclick="copyText(this, '081234567890')">SALIN</button>
+    </div>
+
+    <div class="pay-item gopay">
+        <div class="pay-name">GOPAY</div>
+        <button class="btn-action" onclick="copyText(this, '081234567890')">SALIN</button>
+    </div>
+
+    <div class="pay-item ovo">
+        <div class="pay-name">OVO</div>
+        <button class="btn-action" onclick="copyText(this, '081234567890')">SALIN</button>
+    </div>
+
+    <div class="pay-item qris">
+        <div class="pay-name">QRIS</div>
+        <button class="btn-action btn-qris" onclick="openQris()">LIHAT QR</button>
+    </div>
+
+</div>
+
+<div id="qrisModal" class="modal" onclick="closeQris()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="QRIS Code" class="modal-content">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
